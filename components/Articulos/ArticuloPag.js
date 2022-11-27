@@ -45,13 +45,13 @@ export default function ArticuloPag() {
         <section className="mt-3">
           <h5>Aprende más del tema:</h5>
           <ul>
-            {/* {
+            {
               preguntaData.links.map((link) => {
                 return(
-                  <li key={link}><a href={link}>{link}</a></li>
+                  <li key={link.linkUrl}><a href={link.linkUrl} className="text-blue-dalt">{link.tituloLink}</a></li>
                 )
               })
-            } */}
+            }
           </ul>
         </section>
       </article>
