@@ -13,16 +13,16 @@ export default function ArticuloPag() {
       links: ["https://sg.com.mx/buzz/hack-equality-2da-edicion", "https://sg.com.mx/buzz/hack-equality-2da-edicion", "https://sg.com.mx/buzz/hack-equality-2da-edicion"]
     }
   )
-  console.log("🚀 ~ file: ArticuloPag.js ~ line 16 ~ ArticuloPag ~ preguntaData", preguntaData)
+  
   const { query } = useRouter();
-  console.log(query.articulo)
 
   useEffect(() => {
     if (query.articulo) {
       const preguntaEncontrada = Preguntas.find(pregunta => pregunta.pregunta == query.articulo)
+      console.log("🚀 ~ file: ArticuloPag.js ~ line 23 ~ useEffect ~ query.articulo", query.articulo)
       setPreguntaData(preguntaEncontrada)
     }
-  }, [query.articulo])
+  }, [query])
 
   if (!preguntaData) return null;
 
@@ -33,7 +33,7 @@ export default function ArticuloPag() {
           <img src="https://storage.lacapitalmdp.com/2022/09/educacion-sexual-1024x593.jpg" alt={preguntaData.pregunta} className="img-article" />
         </div>
         <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center my-auto">
-          <h2 className="fs-1">{preguntaData.pregunta}</h2>
+          <h2 className={`fs-1 text-${preguntaData.color}`}>¿{preguntaData.pregunta}?</h2>
           <h3>Categoría: {preguntaData.categoria}</h3>
         </div>
       </div>
@@ -44,13 +44,13 @@ export default function ArticuloPag() {
         <section className="mt-3">
           <h5>Aprende más del tema:</h5>
           <ul>
-            {
+            {/* {
               preguntaData.links.map((link) => {
                 return(
                   <li key={link}><a href={link}>{link}</a></li>
                 )
               })
-            }
+            } */}
           </ul>
         </section>
       </article>

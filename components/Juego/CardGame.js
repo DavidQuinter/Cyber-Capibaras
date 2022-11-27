@@ -17,7 +17,7 @@ export default function CardGame(props) {
         <Image src="/carpincho.png" alt="Imagen pregunta" width={150} height={150} />
         <div className="row">
           <div className="card-title col-sm-12 text-light fs-1 fw-bold my-3">
-            {pregunta.pregunta}
+            ¿{pregunta.pregunta}?
           </div>
         </div>
       </div>

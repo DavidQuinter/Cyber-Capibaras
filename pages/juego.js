@@ -25,7 +25,7 @@ export default function Juego() {
 
 
   return (
-    <div className={`container-fluid ${pregunta.color} vh-100 d-flex align-items-center`}>
+    <div className={`container-fluid bg-${pregunta.color} vh-100 d-flex align-items-center`}>
       <CardGame pregunta={pregunta} obtenerPregunta={obtenerPregunta}/>
     </div>
   )
