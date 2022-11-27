@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function CardGame(props) {
   const { pregunta, obtenerPregunta } = props
   return (
-    <div className="card bg-transparent p-5 align-items-center mx-auto card-game-style">
+    <div className="card bg-transparent my-3 align-items-center mx-auto card-game-style">
       <div className="card-header">
         <Link href={`/articulos/${pregunta.pregunta}`} className="question-icon text-light text-decoration-none fw-bold">
           <FontAwesomeIcon icon={faCircleQuestion} /> &nbsp;

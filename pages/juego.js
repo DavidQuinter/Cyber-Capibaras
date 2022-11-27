@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
+import Footer from "../components/footer"
 import CardGame from "../components/Juego/CardGame"
 import { Preguntas } from "../components/Juego/Preguntas"
+import Navbar from "../components/Navbar"
 
 export default function Juego() {
   const [pregunta, setPregunta] = useState(
@@ -25,8 +27,15 @@ export default function Juego() {
 
 
   return (
-    <div className={`container-fluid bg-${pregunta.color} vh-100 d-flex align-items-center`}>
-      <CardGame pregunta={pregunta} obtenerPregunta={obtenerPregunta}/>
+    <div className={`bg-${pregunta.color} vh-100`}>
+      <header className="sticky-top">
+        <Navbar />
+      </header>
+      <div className={`container-fluid d-flex align-items-center flex-column`}>
+        <CardGame pregunta={pregunta} obtenerPregunta={obtenerPregunta} />
+      </div>
+      <Footer/>
     </div>
+
   )
 }

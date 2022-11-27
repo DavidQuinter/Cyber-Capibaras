@@ -63,7 +63,7 @@ export const Preguntas = [
   },
   {
     id: 6,
-    pregunta: "Qué significa ser papá/mamá antes de los 18 años",
+    pregunta: "Qué significa ser progrenitor antes de los 18 años",
     categoria: "Reproducción, embarazo, maternidad-paternidad",
     color: "violet-dalt",
     articulo: "En nuestra sociedad ser papá o mamá antes de los 18 años es un problema, y si eres mujer y/o pobre, es un problema más grande aún por los desafíos sociales que conlleva. Tener un hijo a esa edad significa muchas responsabilidades y dependiendo de tus condiciones sociales y económicas, puede determinar tu trayectoria vital. Por ejemplo, estudiar una carrera se hará más difícil, y trabajar fuera de la casa también. Además, tus espacios de entretenimiento pueden verse disminuidos. Para ser padre o madre no basta con tener las ganas, sino además disponer de un escenario apropiado para aquello. Es difícil definir ese escenario para todas las realidades, en cada caso será distinto. Te invitamos a preguntarte ¿Cómo imaginas un escenario ideal para ser papá o mamá",
