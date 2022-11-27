@@ -14,7 +14,7 @@ export default function CardGame(props) {
         </Link>
       </div>
       <div className="card-body text-center">
-        <Image src="/carpincho.png" alt="Imagen pregunta" width={150} height={150} />
+        <Image src={pregunta.imagen} alt="Imagen pregunta" width={150} height={150} />
         <div className="row">
           <div className="card-title col-sm-12 text-light fs-1 fw-bold my-3">
             ¿{pregunta.pregunta}?

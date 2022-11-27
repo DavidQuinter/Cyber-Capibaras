@@ -20,7 +20,6 @@ export default function ArticuloPag() {
   useEffect(() => {
     if (query.articulo) {
       const preguntaEncontrada = Preguntas.find(pregunta => pregunta.pregunta == query.articulo)
-      console.log("🚀 ~ file: ArticuloPag.js ~ line 23 ~ useEffect ~ query.articulo", query.articulo)
       setPreguntaData(preguntaEncontrada)
     }
   }, [query])
@@ -31,7 +30,7 @@ export default function ArticuloPag() {
     <>
       <div className="row text-center">
         <div className="col-sm-12 col-md-6 mb-2">
-          <Image src="/logo.png" width={400} height={200} className="mx-auto d-flex align-items-center my-auto"/>
+          <Image src="/logo.png" width={400} height={200} className="mx-auto d-flex align-items-center my-auto" alt="Logo con pelos en la mano"/>
         </div>
         <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center my-auto">
           <h2 className={`fs-1 text-${preguntaData.color}`}>¿{preguntaData.pregunta}?</h2>
@@ -48,7 +47,7 @@ export default function ArticuloPag() {
             {
               preguntaData.links.map((link) => {
                 return(
-                  <li key={link.linkUrl}><a href={link.linkUrl} className="text-blue-dalt">{link.tituloLink}</a></li>
+                  <li key={link.linkUrl}><a href={link.linkUrl} target="__blank" className="text-blue-dalt">{link.tituloLink}</a></li>
                 )
               })
             }
