@@ -1,0 +1,11 @@
+.img-colaboradores{
+    height: 50px;
+    width: 50px;
+}
+.image-container{
+    width: 100px;
+}
+.img{
+    object-fit: contain !important;
+    position: initial !important;
+}
