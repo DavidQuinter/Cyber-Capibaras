@@ -1,4 +1,3 @@
-
 $green-dalt: #003b49;
 $blue-dalt: #1d4289;
 $red-dalt: #d3273e;
@@ -58,4 +57,10 @@ $violet-dalt: #5d3754;
 
 .text-violet-dalt{
     color: $violet-dalt;
+}
+
+.hover-btn-color:hover{
+    background-color: $blue-dalt;
+    opacity: 5;
+    color: #fff;
 }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { Preguntas } from "../Juego/Preguntas";
@@ -30,7 +31,7 @@ export default function ArticuloPag() {
     <>
       <div className="row text-center">
         <div className="col-sm-12 col-md-6 mb-2">
-          <img src="https://storage.lacapitalmdp.com/2022/09/educacion-sexual-1024x593.jpg" alt={preguntaData.pregunta} className="img-article" />
+          <Image src="/logo.png" width={400} height={200} className="mx-auto d-flex align-items-center my-auto"/>
         </div>
         <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center my-auto">
           <h2 className={`fs-1 text-${preguntaData.color}`}>¿{preguntaData.pregunta}?</h2>
